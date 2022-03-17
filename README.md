@@ -1,2 +1,2 @@
-# task-api
-Api para tarefas do dia.
+# Task API.
+##Seja bem vindo! :smile:
