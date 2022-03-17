@@ -21,6 +21,10 @@ mongoose.connect(process.env.URL, { useNewUrlParser: true, useUnifiedTopology: t
 app.use(bodyParser.json());
 app.use('/task', taskRouters);
 
+app.get('/', (_req, res) => {
+  res.status(200).json({message: 'Seja bem vindo!'});
+});
+
 app.listen(PORT, () => {
   console.log('Servidor conectado.')
 });
