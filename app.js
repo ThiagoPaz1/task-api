@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 
 const taskRouters = require('./src/routers/taskRouters');
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 dotenv.config();
 
@@ -25,6 +24,6 @@ app.get('/', (_req, res) => {
   res.status(200).json({message: 'Seja bem vindo!'});
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('Servidor conectado.')
 });
