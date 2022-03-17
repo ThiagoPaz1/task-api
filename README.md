@@ -1,2 +1,2 @@
-# Task API.
+# Task API
 ## Seja bem vindo! :smile:
